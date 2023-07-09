@@ -14,7 +14,9 @@ CLASS = 'あいうえおかがきぎくぐけげこごさざしじすずせぜ�
 
 
 
-
+@app.route('/home', methods=['GET'])
+def get_home():
+    return 'home ne'
 
 @app.route('/predict', methods=['POST'])
 def predict_kanji():
